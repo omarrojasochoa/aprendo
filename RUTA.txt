@@ -1,0 +1,20 @@
+HMTL
+CSS (Responsive Design: Grids, Flexbox, Media Queries)
+
+Lenguaje:
+Javascrip
+- DOM: document object model
+- context (this)
+- closures
+- Scope 
+- classes
+- functions
+- OOP (object oriented programming)
+- Javascript Modular (imports/exports)
+- Web Apis (setInterval/setTimeout, fetch) 
+
+Para sacar una pag: 
+-GlitHub Pages / Netlify
+
+
+ 
