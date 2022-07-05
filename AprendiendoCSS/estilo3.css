@@ -1,0 +1,30 @@
+ /**{
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+}
+
+.contact-form{
+	font-size: 25px;
+}
+.contact-form__h2{
+	font-size: 2em;
+	color: red;
+}*/
+/*-----DAR TAMAÑO A LAS CAJAS-----*/
+*{
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 30px;
+}
+h2 { /*h2 es bloque*/
+	display: inline; /*Se pone en linea*/
+	height: 200px; /*HEIGHT es ALTURA, en inline no se puede
+	dar un ancho*/
+	width: 50px;
+}
+p { /*p es block*/
+	height: 200px; /*HEIGHT es ALTURA, en bloque si se puede
+	dar un ancho*/
+	width: 50px; /*WIDTH es ANCHO*/
+}
+/*--- PADDING es el espacio entre la caja y el texto---*/

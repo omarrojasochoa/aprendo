@@ -1,0 +1,46 @@
+/* -- IMPORTANCIA DE COMANDO--*/
+/* #element {
+	color: skyblue;
+}
+
+.color-red {
+	color: blue; 
+}
+
+
+h1{
+	color: red !important; /* !important es el que esta por encima de todos 
+	}
+
+.form__input--active{
+	color: darkred;
+}
+*/
+
+/* ----UNIDADES tipografia (existen medidas relativas*/
+*{
+	padding: 0px;
+	margin: 0px;
+	background-color:#000 ;
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+}
+
+.contact-form{
+	font-size: 25px;/*font-size:Tamaño de fuente*/
+}
+
+.contact-form__h2 {
+	font-size: 2em; /* "em=16px por defecto" 
+	em es medida relativa IMPORTANT: el contenedor
+	define el valor del em. En este caso 1em=25px */
+	
+	font-family: 'Lobster', verdana; /*font-family es para indicar la fuente*/
+	
+	line-height: 2; /*line-height es para centrar en un espacio y dividir
+	la mitad para arriba y la otra mitad para abajo.*/
+	
+	font-weight: 100; /*ancho de letra*/
+
+	}
+

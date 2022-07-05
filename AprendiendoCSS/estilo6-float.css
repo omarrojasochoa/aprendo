@@ -1,0 +1,38 @@
+*{
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+}
+.contenedor{
+}
+.contenedor div {
+	width: 50%;
+	float: left; /*sirve para separar o subir articulos */
+}
+.primario{
+	background: red;
+	width: 50%;
+
+}
+.secundario{
+	background: yellow;
+}
+
+
+
+/*.cont{
+	color: white;
+	margin: auto;
+	margin-top: 100px;
+	width: 800px;
+	height: 500px;
+	border: 10px solid black;
+	background: grey;
+	overflow: auto;/*OVERFLOW sirve para poner scroll
+	si es necesario
+}*/
+/*.cont img{
+	background: red;
+	position:relative;
+	margin: auto;
+}*/

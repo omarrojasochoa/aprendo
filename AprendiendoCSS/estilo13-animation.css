@@ -1,0 +1,36 @@
+*{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 30px;
+}
+
+.container {
+	padding: 20px;
+	background-color: #86f;
+}
+.caja {
+	position: relative;
+	background-color: #035;
+	height: 80px;
+	width: 80px;
+	margin: 20px;
+	animation-name: desplazamiento;
+	animation-duration: 2s;
+	animation-fill-mode: forwards; /*nos deja
+	en la ultima posicion que se qedo*/
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0) ;/* cubic bezier modifica la velocidad y aceleracion
+de un movimiento  */
+}
+
+@keyframes desplazamiento {
+	from{
+		left: 0%;
+	}
+	to{
+		left: 92.5%;
+	}
+}
+
+/* cubic bezier modifica la velocidad y aceleracion
+de un movimiento  */

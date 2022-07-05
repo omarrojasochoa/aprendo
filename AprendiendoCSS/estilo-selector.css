@@ -1,0 +1,55 @@
+/* 	CSS SELECTOR:  
+	- Universal: * ;
+	- De Tipo: h1;
+	- Clases: .; 
+	- ID: #;
+	- Por Atributo: [];
+	- Descendiente:  h2 p;
+	- Pseudo Clases: ;
+*/
+
+/* UNIVERSAL
+*{
+	color: red;
+}
+*/
+
+/*DE TIPO:  Selecciona directamente por el nombre de los elementos 
+h1{
+	color: red;
+}
+*/
+
+/*CLASES: Se agrega el atributo Class en html y se inicia con un punto seguido del nombre de la clase; 
+.titulo-h2{
+	color: skyblue;
+}*/
+
+/* ID: Se utiliza el # y luego el nombre del ID. a modificar ;
+#element-for-modify {
+	color: blueviolet;
+}*/
+
+/* Atributo: Se utiliza [atributoX="valorasignado"] para modificar un atributo;
+[hdp="willgay"]{
+	color: red;
+}*/
+
+/* Descendiente:  Se usa como de tipo. Ejm queremos cambiar a todos los "p" que se encuentran en un "h2";
+h2 b { 
+color: red; }*/
+h2 b:hover {
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+

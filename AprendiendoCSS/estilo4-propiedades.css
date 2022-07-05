@@ -1,0 +1,35 @@
+*{
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 30px;
+}
+ /*margin es la distancia entre 2 cajas*/
+h2{
+	background-color: yellow;
+	display: inline-block;
+	padding: 100px;
+	height: 300px;
+	width: 300px;
+	box-sizing: border-box;/*se usa para arreglar
+	el padding*/
+	text-align: center; /*centrar texto*/
+	margin: 10px; /*espacio o margen*/
+	border-radius: 15px; /* redondear borde */
+	border: 8px solid black;
+	box-shadow: 0px 0px 10px 0 #000; /*sombra de la caja: eje x, eje y, tamaño desenfoque
+	cuanto borde, color */
+	text-shadow: 2px 2px 7px #fff;
+	/*transform: rotate(45deg);*/
+	*/
+	
+}
+h1{
+	
+	background-color: blue;
+	padding: 100px;
+	height:300px;
+	width: 700px;
+	box-sizing: content-box;
+	text-align: center;
+
+}

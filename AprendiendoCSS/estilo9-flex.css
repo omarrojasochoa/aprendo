@@ -1,0 +1,72 @@
+*{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 30px;
+	line-height: 80px;
+}
+.flex-container{
+	display: flex;
+	background-color: yellow;
+	padding: 20px;
+	border: 2px solid black;
+	
+}
+.flex-container div{
+	color: white;
+	background-color: darkred;
+	margin: 10px;
+	text-align: center;
+	flex-basis: 100px;
+
+		
+}
+
+@media only screen and (max-width: 700px) {
+	.flex-container{
+		flex-direction: column;
+	}
+	.flex-container div {
+		flex-basis: 100%;
+	}
+}
+
+/* PROPIEDADES FLEX
+
+flex-direction: row	   / row-reverse
+				column  / column-reverse
+
+
+flex-wrap: 	nowrap; (por defecto)
+			wrap (cuando no entran elementos en el
+			 	  viewport saltan a la siguiente linea)
+
+
+flex-flow: FLEX DIRECTION + FLEX WRAP
+		 :  wrap row;
+
+
+justify-content: center;
+				flex-start; (se ponen al inicio)
+				flex-end (se ponen al final)
+
+align-items:stretch (por defecto: ocupa todo vertic) 
+			center (centrara verticalmente);
+			flex-star (arriba vertic.)
+			flex-end  (abajo vertic.)
+			baseline (se alinia a base de los elementos)
+
+(se coloca despues de un flex-wrap)
+align-content: space-between; (se colocan a extremos vertic.)
+			   strech 
+			   center
+
+flex-grow:  es un atributo(html) indica la cantidad;
+de espacio que debe tener
+
+flex-shrink atributo que indica que se encoja;
+cuando no haya espacio
+
+flex-basis:200px atributo da una medida minima;
+
+
+ */

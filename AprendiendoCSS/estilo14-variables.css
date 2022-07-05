@@ -1,0 +1,46 @@
+*{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 30px;
+}
+
+/*:root {
+	--color-rojo: #f35;
+}*/
+
+/*div {
+	
+	padding: 30px;
+	height: 150px;
+	width: 150px;
+	margin: 30px;
+}*/
+.caja{
+	filter: contrast(20);
+	background-color: white;
+}
+
+.container{
+	padding: 30px;
+	height: 150px;
+	width: 150px;
+	margin: 30px;
+	display: inline-block;
+	background: red;
+	border-radius: 50%;
+	filter: blur(8px);
+	
+}
+.container:first-child {
+	animation: trasladar 2s alternate infinite;
+}
+
+
+@keyframes trasladar {
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(190px);
+	}
+}
