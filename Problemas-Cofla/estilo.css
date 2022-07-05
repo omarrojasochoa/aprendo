@@ -1,0 +1,69 @@
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+	color: #333;
+	font-family: sans-serif;
+
+}
+
+.flex-item{
+	flex-grow: 1;
+	margin: 30px;
+	max-width:320px;
+	border: 2px solid #333;
+	padding: 10px 20px; /*saco el padding top*/
+}
+
+.flex-item:hover{
+	border-color: #71a154;
+	box-shadow: 0 0 15px #317154;
+}
+
+.flex-item:focus{
+	border-color: #71a154;
+	box-shadow: 0 0 30px #317144;
+}
+
+h3{
+	color: #999 ;
+
+}
+
+h2, h3{
+	margin: 0;
+}
+
+p b {
+	color: #71a154;
+}
+
+.llave-img {
+	width: 300px;
+
+}
+
+form{
+	text-align: center;
+}
+.boton{
+	background:#317154;
+	color: #fff;
+	border:  none;
+	padding: 8px 30px;
+	font-size: 25px;
+	letter-spacing: 1px;
+	border-radius: 10px;
+}
+.boton:hover{
+	background: #71a154;
+	
+}
+
+
+
+
+
+
+
+
