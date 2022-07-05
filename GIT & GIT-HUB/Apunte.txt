@@ -85,4 +85,9 @@ ramab
 
 -cat index2.html: Se ve el contenido del archivo
 
-- git 
+- git merge ramab:(estando en master) Se trajo la ramab a master
+
+______________________________________________________
+git push -u origin main
+
+- git push  // se sube
