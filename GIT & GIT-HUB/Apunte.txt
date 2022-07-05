@@ -1,0 +1,88 @@
+
+- git init: Voy a empezar Utilizar GIT en el documento.
+
+- git add: Para pasar del 
+		Working Directory -> Staging Area		
+		git add *.js // se agregara todos los archivos JS 
+
+- git status: Para ver en que estado esta el archivo
+
+- git commit: Para pasar del
+
+	git commit -m "nuevo cambio"
+	Staging Area -> Repositorio (Se crea un snapshot)
+
+
+- git push: Se usa para Subirlo a un Repositorio REMOTO.
+
+- git pull: Traes los cambios que han hecho los otros desarrolladores
+
+- git clone: Hace una copia desde el servidor central a tu computador  
+
+
+- git diff: Se visualiza los cambios realizados
+	-> se sale de la pantalla con la letra "q"
+	
+	git dif --staged
+
+
+_______________________________________________________
+cd .. // retrocede carpeta 
+
+cd nombre // avanza a la carpeta "nombre"
+
+git config -h // Nos lanza un listado de todas las configuraciones
+
+ls // muestra un listado de todas las carpetas y documentos de un directorio
+
+pwd //  donde se encuentra 
+
+mkdir nombre // Para crear una nueva carpeta o directorio
+
+- git rm archivo // eliminar archivo del directorio	
+
+- git restore --staged archivo.txt // llamando del directorio 
+ git restore archivo.txt // regresa a la carpeta
+
+- git mv archivo1.txt archivo.txt // Se renombra el archivo y
+luego se debe guardar en git con add, ambos.
+
+- git log --oneline // Me muestra el hi storial
+______________________________________________________
+
+-> FLUJO DE TRABAJO EN GIT:
+
+	COMPUTADORA 
+	Aqui uno trabaja en su compu, se agrega con: git add index.html
+
+	STAGE
+	Pasa a Stage, aca se puede descartar o no cambios. Luego sigue Commit: git commit index.html
+
+	COMMIT 
+	Aqui ya se puede subir al servidor con: git push index.html
+	
+	SERVER
+	Se encuentra el archivo index.html en Github ya modificado.
+
+_________________________________________________________
+
+-> IGNORAR ARCHIVOS Y DIRECTORIOS 
+Se crea el documento ".gitignore", donde en sus lineas de codigo
+se colocara el nombre del archivo a ignorar. ej: linea 1. .env
+
+Luego se debe agregar el documento .gitignore: 
+git add .gitignore
+git commit "Se agrrega archivo gitignore"
+
+______________________________________________________
+
+-> RAMAS EN GIT (CADA PRGRAMADOR TIENE UNA RAMA)
+
+- git branch: Para saber en q rama te ubicas
+
+- git checkout -b ramab: Se creo la rama de nombre 
+ramab
+
+-cat index2.html: Se ve el contenido del archivo
+
+- git 

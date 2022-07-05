@@ -1,0 +1,10 @@
+
+git init: crea el .git dentro de un directorio o archivo
+git add index.html : del directorio al stage. se descarta o aprueba cambios 
+git commit index.html: del stage al commit 
+git push index.html: se sube al servidor github o otro
+
+git status para saber como va el proceso de subida 
+
+git clone
+git pull
