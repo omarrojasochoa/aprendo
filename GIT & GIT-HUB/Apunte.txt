@@ -91,3 +91,8 @@ ______________________________________________________
 git push -u origin main
 
 - git push  // se sube
+
+______________________________________________________
+-> PARA REGRESAR A UN CAMBIO YA GUARDADO
+
+	git reset --hard codigo
