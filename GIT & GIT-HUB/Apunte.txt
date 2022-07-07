@@ -80,6 +80,8 @@ ______________________________________________________
 
 - git branch: Para saber en q rama te ubicas
 
+- git branch -d master// se elimina el branch Master
+
 - git checkout -b ramab: Se creo la rama de nombre 
 ramab
 
