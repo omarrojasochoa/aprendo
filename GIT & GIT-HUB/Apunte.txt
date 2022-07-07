@@ -103,4 +103,7 @@ ______________________________________________________
 - git tag 15-06-22v1 -m "Version1 del Proyecto" // Se crea el tag 15-06-22v1
 - git push --tags // Para subirlo a Github
 
-
+______________________________________________________
+-> Para clonar una carpeta
+ 1. Presionar en la carpeta vacia. Git Bash
+ 2. Colocar git clone url
