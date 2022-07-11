@@ -17,8 +17,8 @@ for (var i = 1; i <= 20; i++) {
 	
 	let div = document.createElement("DIV");
 	
-	
-
+	div.addEventListener("click",()=>{changeHidden(modeloRandom)});
+	div.tabIndex = i; //Asi se podra usar FOCUS en CSS
 	
 	div.classList.add(`item-${i}`,`flex-item`);
 	div.innerHTML=llave[0]+llave[1]+llave[2]+llave[3];

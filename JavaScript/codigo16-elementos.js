@@ -19,7 +19,8 @@ _________OBTENCION Y MODIFICACION DE ELEM.________
 
 
 __________CREACION DE ELEMENTOS.___________
- 
+appendChild() 
+
 createElement("x"): crea el elemento x
 
 createTextNode("algo x"): crea un texto "algo x" dentro del elemento

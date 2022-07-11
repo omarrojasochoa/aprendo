@@ -1,6 +1,6 @@
 const contenedor = document.querySelector(".contenedor");
 
-/*
+
 ____________OBTENCION Y MODIF. DE CHILDS_____________
 
 - firstChild; (se usa sin dejar espacios)
@@ -42,7 +42,7 @@ ___________MET. DE CHILDS___________
 	Bota un True o False
 
 
-
+// SIRVEN PARA IDENTIFICAR 
 __________PROP PARENTS__________ 
 
 - parentElement; Seleccione el padre Elemento de un Elemento

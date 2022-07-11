@@ -1,0 +1,43 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    margin:20px;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.llave-img{
+    width: 300px;
+}
+
+.flex-item{
+    flex-grow: 1;
+    margin: 20px;
+    max-width: 320px;
+    border: 2px solid #333;
+    padding: 10px 20px;
+}
+.h3{
+    color: #999;
+}
+p b{
+    color: #71a154;
+}
+h2, h3{
+    margin:0;
+}
+form{
+	text-align: center;
+}
+.boton{
+	background:#317154;
+	color: #fff;
+	border:  none;
+	padding: 8px 30px;
+	font-size: 25px;
+	letter-spacing: 1px;
+	border-radius: 10px;
+}
+.boton:hover{
+	background: #71a154;
+}

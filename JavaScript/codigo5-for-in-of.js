@@ -15,7 +15,7 @@ for (animal of animales){ //"of" sirve para los elemntos
 */
 
 forRancio:// Sentencia "LABEL"
-let array1 = ["a","b","c"];
+{let array1 = ["a","b","c"];
 let array2=["d","e",array1,"g"];
 
 	for (let array in array2) {
@@ -30,3 +30,4 @@ let array2=["d","e",array1,"g"];
 
 		}
 	}
+}

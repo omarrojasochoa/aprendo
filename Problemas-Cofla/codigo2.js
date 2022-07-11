@@ -39,7 +39,7 @@ let alumnosTotales = [];
 // 3er paso llenar la 2da parte del array
 
 for (i = 0; i < cantidad; i++) {
-	alumnosTotales[i]= [prompt("Nombre del alumno "+(i+1)),0];
+	alumnosTotales[i]=  [prompt("Nombre del alumno "+(i+1)),0];
 }
 
 const tomarAsistencia = (nombre,posicion)=>{
