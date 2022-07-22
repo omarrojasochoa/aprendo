@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button{
+    padding: 1rem;
+    background-color: greenyellow;
+    color: #fff;
+    border-radius: 10px;
+    width: fit-content;
+}
+.button:hover{
+    background-color: green;
+    cursor: pointer;
+
+}
+.text{
+    margin-top: 2rem;
+
+}
+.img{
+    margin-top: 2rem;
+    width: 700px;
+}
+.input-container{
+    margin-top: 2rem;
+    width: 100%;
+}
+.input-container>input{
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 20px;
+}

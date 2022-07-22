@@ -1,4 +1,4 @@
-const contenedor = document.querySelector(".contenedor");
+/*const contenedor = document.querySelector(".contenedor");
 
 
 ____________OBTENCION Y MODIF. DE CHILDS_____________

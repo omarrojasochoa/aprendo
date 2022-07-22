@@ -9,6 +9,9 @@ const crearLlave =(nombre,modelo,precio)=>{
 }
 
 let documentFragment = document.createDocumentFragment()
+const changeHidden=(model)=>{
+    document.querySelector(".key-data").value=model;
+}
 
 for (i=1;i<=20;i++){
     let modeloRandom=Math.round(Math.random()*100000);
@@ -17,7 +20,7 @@ for (i=1;i<=20;i++){
 
     let div=document.createElement("DIV");
     
-    
+    div.addEventListener("click",()=>{changeHidden(modeloRandom)});
     div.tabIndex=i;
 
     div.classList.add(`item${i}`,`flex-item`);

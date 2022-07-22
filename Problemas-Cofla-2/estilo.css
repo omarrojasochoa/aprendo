@@ -1,0 +1,33 @@
+input{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+    outline: none;
+}
+
+.boton{
+    width: 100px;
+    align-content: center;
+}
+form{
+    margin: auto;
+    background-color: #22378C;
+    padding: 200px;
+}
+h2{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    outline: none;
+    
+}
+.green{
+    color: #9c9;
+}
+.red{
+    color: rgb(189, 61, 61);
+}
+.resultado{
+    text-align: center;
+}
