@@ -31,7 +31,7 @@ let alumnos=[{
     nombre:"Dina Rojas",
     email: "dina@gmail.com",
     materia: "Fisica 2"
-}]
+}];
 
 const boton=document.querySelector(".button");
 const contenedor=document.querySelector(".grid-container");

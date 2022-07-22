@@ -24,9 +24,10 @@ Limpiar Cookies y Cache
 PESTAÑA TIMELINE o PERFORMANCE
 
 */
-
+/*
 elements
 se puede copiar rutas o div o p
 se puede forzar hover focus
 
 sources       
+*/
