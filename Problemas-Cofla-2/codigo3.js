@@ -47,6 +47,7 @@ boton.addEventListener("click",()=>{
     let elementos=document.querySelectorAll(".semana");
     console.log('asdasd', elementos);
     let semanasElegidas=document.querySelectorAll(".semana-elegida")
+    console.log("hola",semanasElegidas);
     for (let elemento in elementos){
         const semana = elementos[elemento];
         semana.innerHTML=semanasElegidas[elemento].value;
