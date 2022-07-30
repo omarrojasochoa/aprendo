@@ -16,7 +16,7 @@ const data = [
     ["Omar Rojas","@soyomar"],
     ["Dalto","@soydalto"],
     ["Camila Nesa","@milanesa"],
-    ["Rancio Ramirez"],
+    ["Rancio Ramirez","@rancio"],
 ];
 
 const personas= [];
@@ -43,7 +43,7 @@ obtenerPersona(0,(err,persona)=>{
     }
 })
 
-const obtenerInstagram (id,cb){
+const obtenerInstagram= (id,cb)=>{
     if (personas[id]== undefined){
         cb("No se encontro el instagram");
     }
