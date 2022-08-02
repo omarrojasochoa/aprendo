@@ -29,25 +29,34 @@ const obtenerPersona=(id,cb)=>{// cb = callback
         cb("No se encontro la persona");
     }
     else{
-        cb(null,personas[id])
+        cb(null,personas[id],id)
     }
 };
 
-obtenerPersona(0,(err,persona)=>{
-    if (err){
-        console.log(err);
-    }
-    else {
-        console.log(persona.nombre);
-        console.log(obtenerInstagram());
-    }
-})
-
 const obtenerInstagram= (id,cb)=>{
-    if (personas[id]== undefined){
+    if (personas[id].instagram== undefined){
         cb("No se encontro el instagram");
     }
     else{
         cb(null,personas[id].instagram)
     }
 }
+
+obtenerPersona(0,(err,persona,id)=>{
+    if (err){
+        console.log(err);
+    }
+    else {
+        console.log(persona.nombre);
+        obtenerInstagram(id,(err,instagram)=>{
+            if(err){
+                console.log(err);
+            }
+            else{
+                console.log(instagram);
+            }
+        });
+    }
+})
+
+
