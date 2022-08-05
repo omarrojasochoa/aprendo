@@ -25,19 +25,19 @@ let peticion= fetch("https://reqres.in/api/unknown/2",{
             .then((res)=>{console.log(res)})   
             
 
+*/
 
-
-//USO DE blob() para imagenes
+//---------> USO DE blob() para IMAGENES O MULTIMEDIA
 const imagen=document.querySelector(".img")
 let peticion= fetch("kimi.jpg"); //
     peticion.then((res)=>res.blob()) // no funciona con corchetes
             .then(img=>imagen.src=URL.createObjectURL(img))
+           
             /*imagen.src="kimi.jpg" tmbien pudo ser asi,
              pero este es distinto: 
              - URL.createObjectURL() crea un url temporal donde
-             se almacena la imagen
+             se almacena la imagen*/
             
              
              
-____________________USO DE AXIOS_____________________
-*/
+

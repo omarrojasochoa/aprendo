@@ -16,6 +16,8 @@
 
 -------> BUSCAR EN LA CARPETA CODIGO.
 */
+
+
 /*const peticion = new XMLHttpRequest();
 
 //console.log(peticion)

@@ -25,7 +25,7 @@ document.write(array);    -> b,c
 
 
 - unshift(): Añade al inicio de un array. Modifica el array.
-array.shift('d');
+array.unshift('d');
 document.write(array);   -> d,a,b,c
 
 
