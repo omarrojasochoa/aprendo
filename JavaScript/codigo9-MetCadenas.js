@@ -56,6 +56,10 @@ y agarra 2 elementos e inicia desde "1" .
 
 -trimEnd(): Elimina los espacios en blanco del final
 
+
+
+.map
+
 */
 
 

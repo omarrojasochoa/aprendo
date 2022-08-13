@@ -47,7 +47,7 @@ sin contar el ultimo
 let resultado = array.slice(0,2);
 document.write(resultado); ->  a,b
 
-- join("-"): Une los elementos y se vuelve una cadena, podemos separarlo de distintas
+- join("-"): Une los elementos y se vuelve una cadena de texto, podemos separarlo de distintas
 maneras, en este caso "-".
 let resultado = array.join("-");
 document.write(resultado);  -> a-b-c
