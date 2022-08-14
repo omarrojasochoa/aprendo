@@ -42,7 +42,7 @@ item.appendChild(textItem);
 contenedor.appendChild(item); 
 //se agrego la etiqueta Li al Div
 
-console.log(item);*/
+console.log(item);
 
 
 

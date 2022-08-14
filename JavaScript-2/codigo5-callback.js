@@ -16,7 +16,7 @@ const data = [
     ["Omar Rojas","@soyomar"],
     ["Dalto","@soydalto"],
     ["Camila Nesa","@milanesa"],
-    ["Rancio Ramirez"],
+    ["Rancio Ramirez","@rancio"],
 ];
 
 const personas= [];
@@ -32,7 +32,8 @@ const obtenerPersona=(id,cb)=>{// cb = callback
         cb(null,personas[id],id)
     }
 };
-const obtenerInstagram = (id,cb)=>{
+
+const obtenerInstagram= (id,cb)=>{
     if (personas[id].instagram== undefined){
         cb("No se encontro el instagram");
     }
@@ -41,7 +42,7 @@ const obtenerInstagram = (id,cb)=>{
     }
 }
 
-obtenerPersona(3,(err,persona,id)=>{
+obtenerPersona(0,(err,persona,id)=>{
     if (err){
         console.log(err);
     }
@@ -57,3 +58,5 @@ obtenerPersona(3,(err,persona,id)=>{
         });
     }
 })
+
+
