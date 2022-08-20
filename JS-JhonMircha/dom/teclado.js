@@ -3,31 +3,34 @@ let x=0,y=0;
 export function moveBall(e,ball,stage){
 const $ball = document.querySelector(ball);
 const $stage=document.querySelector(stage);    
-limitsBall=$ball.getBoundingClientRect(); //Nos da un objeto de altura anchura, se usara para
-limitsStage=$stage.getBoundingClientRect()    //limitar el movimiento de la bola // y escenario
+const limitsBall=$ball.getBoundingClientRect(); //Nos da un objeto de altura anchura, se usara para
+const limitsStage=$stage.getBoundingClientRect();  //limitar el movimiento de la bola // y escenario
 
-console.log(e.keyCode)
-console.log(e.key)
-//const move=(direction)=>{}
+//console.log(e.keyCode)
+//console.log(e.key)
+//console.log(limitsBall,limitsStage);
+
 switch (e.keyCode) {
     case 37://izq
         e.preventDefault();
-        x--;       
+        if(limitsBall.left>limitsStage.left){x--};       
         // move("left")
         break;
     case 38://arriba
-        e.preventDefault();
-       y--;
+        if(limitsBall.top>limitsStage.top){
+            e.preventDefault();
+            y--};
         // move("up")
         break;
     case 39://derecha
         e.preventDefault();
-        x++;
+        if(limitsBall.right<limitsStage.right){x++};
        // move("right")
         break;
     case 40://abajo
-        e.preventDefault();
-        y++;
+        if(limitsBall.bottom<limitsStage.bottom){
+            e.preventDefault();
+            y++};
         // move("down")
         break;
     default:
