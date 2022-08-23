@@ -19,40 +19,40 @@ import contactFormValidations from "./102_validaciones_form.js";
 import speechReader from "./104_narrador.js";
 
 const d=document;
-d.addEventListener("DOMContentLoaded",e=>{ //Carga del documento 
+d.addEventListener("DOMContentLoaded",e=>{ //Carga del documento
     hambuguerMenu(".panel-btn",".panel",".menu a");
     digitalClock("#reloj","#activar-reloj","#desactivar-reloj");
     alarm("../assets/alarma.mp3","#activar-alarma","#desactivar-alarma");
     countdown(
-    "#countdown",
-    "Nov 30, 2023 07:30:15",
-    "Feliz Cumpleaños Mr. Programador 🤓 ");
-    scrollTopButton(".scroll-top-button");
-    responsiveMedia(
-        "youtube",
-        "(min-width:900px)",
-        `<a href="https://www.youtube.com/embed/MXbN474T6bE?list=RDMXbN474T6bE" target="_blank" rel="noopener">Ver Video</a>`,
-        `<iframe width="750" height="400" src="https://www.youtube.com/embed/MXbN474T6bE?list=RDMXbN474T6bE",
-        title="Ella Ya Me Olvido- Manuel Medrano" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-        gyroscope; picture-in-picture" allowfullscreen></iframe>`
-        );
-    responsiveMedia(
-        "gmaps",
-        "(min-width:900px)",
-        `<a href="https://goo.gl/maps/9w1PDyTsmmFjEqiu9" target="_blank" rel="noopener">Ver Mapa</a>`,
-        `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.353342866512!2d-77.06290118255615!3d-11.950020099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d1d5b57aecaf%3A0xbc36c6e40b5d56!2sBusano%20110%2C%20Comas%2015314!5e0!3m2!1ses-419!2spe!4v1660615855641!5m2!1ses-419!2spe" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
-    responsiveTester("#responsive-tester");
-    userDeviceInfo("#user-device");
-    webCam("#webcam");
-    getGeolocation("#geolocation");
-    searchFilters(".card-filter",".card");
-    sorteo("#winner-btn",".player");
-    slider();
-    scrollSpy();
-    smartVideo();
-    contactFormValidations();
-
+        "#countdown",
+        "Nov 30, 2023 07:30:15",
+        "Feliz Cumpleaños Mr. Programador 🤓 ");
+        scrollTopButton(".scroll-top-button");
+        responsiveMedia(
+            "youtube",
+            "(min-width:900px)",
+            `<a href="https://www.youtube.com/embed/MXbN474T6bE?list=RDMXbN474T6bE" target="_blank" rel="noopener">Ver Video</a>`,
+            `<iframe width="750" height="400" src="https://www.youtube.com/embed/MXbN474T6bE?list=RDMXbN474T6bE",
+            title="Ella Ya Me Olvido- Manuel Medrano" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            );
+        responsiveMedia(
+            "gmaps",
+            "(min-width:900px)",
+            `<a href="https://goo.gl/maps/9w1PDyTsmmFjEqiu9" target="_blank" rel="noopener">Ver Mapa</a>`,
+            `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.353342866512!2d-77.06290118255615!3d-11.950020099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d1d5b57aecaf%3A0xbc36c6e40b5d56!2sBusano%20110%2C%20Comas%2015314!5e0!3m2!1ses-419!2spe!4v1660615855641!5m2!1ses-419!2spe" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
+        responsiveTester("#responsive-tester");
+        userDeviceInfo("#user-device");
+        webCam("#webcam");
+        getGeolocation("#geolocation");
+        searchFilters(".card-filter",".card");
+        sorteo("#winner-btn",".player");
+        slider();
+        scrollSpy();
+        smartVideo();
+        contactFormValidations();
+        
 })
 
 d.addEventListener("keydown",(e)=>{/*Cuando presiono la tecla
