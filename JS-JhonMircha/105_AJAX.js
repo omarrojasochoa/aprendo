@@ -102,13 +102,49 @@
     const $axios=document.querySelector("#axios");
     const $fragment=document.createDocumentFragment();
 
-    axios("https://reqres.in/api/uses")
-    .then(res=>{
-        console.log(res)
+    axios("https://jsonplaceholder.typicode.com/users")
+    .then((res)=>{
+        //console.log(res);
+        let json=res.data;
+        //console.log(json)
+        json.forEach((el)=>{
+            const $li=document.createElement("li");
+            $li.innerHTML=`${el.name} --- ${el.email} --- ${el.phone}`;
+            $fragment.appendChild($li);
+        })
+        $axios.appendChild($fragment)
     })
     .catch(err=>{
-            console.log("Estamos en el catch:",err)
+           // console.log("Estamos en el catch:",err.response)
+            let message = err.statusText || "Ocurrió un Error";
+            $axios.innerHTML=`Error ${err.response.status}: ${message}`;
+    })
+    .finally(()=>{
+        //console.log("Esto se ejecutará independientemente del metodo Axios")
     })
 
 })();
 
+/* ----------- AXIOS & Async-Await ----------*/
+
+(()=>{
+    const $axiosAsync=document.querySelector("#axios-async");
+    const $fragment=document.createDocumentFragment();
+    
+    async function getData(){
+        try {
+            let res= await axios.get("https://jsonplaceholder.typicode.com/users")
+            let json= await res.data
+            json.forEach((el)=>{
+                const $li=document.createElement("li");
+                $li.innerHTML=`${el.name} --- ${el.email} --- ${el.phone}`
+                $fragment.appendChild($li)
+            })
+            $axiosAsync.appendChild($fragment)
+        } catch (err) {
+            let message = err.statusText || "Ocurrió un Error";
+            $axiosAsync.innerHTML=`Error ${err.response.status}: ${message}`;
+        }
+    }
+    getData();
+})()
