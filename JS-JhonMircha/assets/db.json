@@ -24,6 +24,31 @@
       "id": 5,
       "nombre": "Ikki",
       "constelacion": "Fenix"
+    },
+    {
+      "nombre": "omar",
+      "constelacion": "hola",
+      "id": 6
+    },
+    {
+      "nombre": "diego",
+      "constelacion": "maricon",
+      "id": 7
+    },
+    {
+      "nombre": "mario",
+      "constelacion": "chupa-pinga",
+      "id": 8
+    },
+    {
+      "nombre": "williams",
+      "constelacion": "tragasable",
+      "id": 9
+    },
+    {
+      "nombre": "cr7",
+      "constelacion": "siuu",
+      "id": 10
     }
   ],
   "dioses": [

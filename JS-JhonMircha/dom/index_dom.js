@@ -65,4 +65,3 @@ keyup: cuando sueltas la tecla, keypress: mientras lo tengas presionada */
 darktheme(".dark-theme-btn","dark-mode");// no se puede hacer doble DOMContentLoaded por eso se saca esta fx
 networkStatus();
 speechReader();
-
