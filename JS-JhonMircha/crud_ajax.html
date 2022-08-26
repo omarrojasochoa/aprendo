@@ -58,12 +58,12 @@
             const xhr= new XMLHttpRequest();
             
             xhr.addEventListener("readystatechange",e=>{
-                if(xhr.readyState!==4)return;
+                if(xhr.readyState!==4)return ;
                 if (xhr.status>=200 && xhr.status<300){
                     let json=JSON.parse(xhr.responseText);
                     success(json);
                 } else{
-                    console.log(xhr)
+                    //console.log(error)
                     let message = xhr.statusText || "Ocurrió un Error"
                     error(`Error ${xhr.status}: ${message}`)
                     
@@ -79,12 +79,12 @@
                 //method:"GET",
                 url:"http://localhost:5555/santos",
                 success:(res)=>{
-                    //console.log(res);
+                    console.log(res);
                     res.forEach(el=>{
                         $template.querySelector(".name").textContent=el.nombre;
                         $template.querySelector(".constellation").textContent=el.constelacion;
                        
-                        $template.querySelector(".edit").dataset.id=el.id;//le crea un atributo dataid
+                        $template.querySelector(".edit").dataset.id=el.id;//le crea un atributo dataid, se pone en el botn
                         $template.querySelector(".edit").dataset.name=el.nombre;
                         $template.querySelector(".edit").dataset.constellation=el.constelacion;
                         $template.querySelector(".delete").dataset.id=el.id;
@@ -95,7 +95,7 @@
                     $table.querySelector("tbody").appendChild($fragment)
                 },
                 error:(err)=>{
-                    console.error(err);
+                    console.warn(err);
                     $table.insertAdjacentHTML("afterend",`<p><b>${err}</b></p>`);
                     
                 }
@@ -103,29 +103,6 @@
             })
         }
         d.addEventListener("DOMContentLoaded",getAll);
-
-        d.addEventListener("submit",e=>{
-            if(e.target===$form){
-                e.preventDefault();
-                
-                if(!e.target.id.value){
-                    //create POST
-                    ajax({
-                        url:"http://localhost:5555/santos",
-                        method:"POST",
-                        success:(res)=>location.reload(),
-                        error:()=>$form.insertAdjacentHTML("afterend",`<p><b>${err}</b></p>`),
-                        data:{
-                            nombre: e.target.nombre.value,
-                            constelacion: e.target.constelacion.value
-                        }
-
-                    });
-                } else{
-                    //Update PUT
-                }
-            }
-        })
     </script>
 </body>
 </html>
