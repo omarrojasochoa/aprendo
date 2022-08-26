@@ -52,6 +52,29 @@
         const $template=d.querySelector("#crud-template").content;
         const $fragment=d.createDocumentFragment();
         
+
+        const getAll= async()=>{
+            try {
+                let res= await fetch("http://localhost:5555/santos");
+                let json= await res.json();
+                //console.log(json)
+                if(!res.ok) throw{status:res.status, statusText:res.statusText};
+                console.log(json)
+                json.forEach(el=>{
+                    $template.querySelector(".name").textContent=el.nombre
+                    $template.querySelector(".constellation").textContent=el.constelacion
+                
+                    let $clone=d.importNode($template,true);
+                    $fragment.appendChild($clone);
+                })
+                $table.querySelector("tbody").appendChild($fragment)
+            } catch (err) {
+                //console.log(`estoy en el catch`, err)
+                let message = err.statusText||"Ocurrió un error";
+                $table.insertAdjacentHTML("afterend",`<p><b>Error ${err.status}: ${message}</b></p>`)
+            }
+        }
+        d.addEventListener("DOMContentLoaded",getAll)
     </script>
 </body>
 </html>
