@@ -38,7 +38,7 @@ export default function contactFormValidations(){
 
 
     d.addEventListener("submit",(e)=>{
-        //e.preventDefault();
+        e.preventDefault();
         //alert("Enviando formulario")
 
         const $loader=d.querySelector(".contact-form-loader");
@@ -51,7 +51,7 @@ export default function contactFormValidations(){
             $form.reset()
 
             setTimeout(()=>$response.classList.add("none"),2000)
-        }, 2000);
+        }, 3000);
     })
 
 }
