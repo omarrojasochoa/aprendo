@@ -1,0 +1,53 @@
+.hidden {
+    color: transparent;
+}
+
+body {
+    background-color: #47327e;
+    color: #fff;
+    font-family: 'SF Pixelate', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#palabraDiv{
+    margin-top: 20px
+}
+
+.letra {
+    margin: 0 7px;
+    position: relative;
+    text-align: center;
+}
+
+.letra::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #03bb85;
+    min-width: 12px;
+}
+
+#empezarBtn {
+    margin-top: 20px;
+    appearance: none;
+    font-family: 'SF Pixelate', sans-serif;
+    border: none;
+    width: 300px;
+    padding: 10px;
+    background: #03bb85;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.alumno{
+    margin-top: 50px;
+}
