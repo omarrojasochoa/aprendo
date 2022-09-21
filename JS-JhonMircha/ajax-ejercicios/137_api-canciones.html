@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+, <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador de Canciones</title>
     <style>
-        
+        html {
+            font-family: sans-serif;
+        }
+        main{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .loader{
+            display: none;
+            margin: auto;
+        }
+
+        @media screen and (min-width: 800px) {
+            main{
+                flex-direction: row;
+            }
+
+            main>* { /*hijos de main*/
+                padding: 1rem;
+                flex-basis: 50%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -21,12 +46,45 @@
     <img src="../assets/puff.svg" alt="Cargando.." class="loader">
     <aside class="error"></aside>
     <main>
-        <article class="artist">
-            <h2>Información del Artista</h2>
-        </article>
-        <article class="song">
-            <h2>Información de la Canción</h2>
-        </article>
+        <article class="artist"></article>
+        <article class="song"></article>
     </main>
+    <script>
+        const d=document;
+        const $form=d.querySelector("#song-search");
+        const $loader=d.querySelector(".loader");
+        const $error = d.querySelector(".error");
+        const $main= d.querySelector("main");
+        const $artist=d.querySelector(".artist");
+        const $song=d.querySelector(".song");
+
+        $form.addEventListener("submit", async e=>{
+            e.preventDefault();
+            try {
+                $loader.style.display="block"
+
+                let artist=e.target.artist.value.toLowerCase();
+                let song=e.target.song.value.toLowerCase();
+                let $artistTemplate="";
+                let $songTemplate=""; 
+                let artistAPI=`https://theaudiodb.com/api/v1/json/2/search.php?s=${artist}`;
+                let songAPI=`https://api.lyrics.ovh/v1/${artist}/${song}`;
+                let artistFetch=fetch(artistAPI);
+                let songFetch=fetch(songAPI);//murio api
+                let [artistRes, songRes]= await Promise.all([artistFetch, songFetch]);
+                let artistData= await artistRes.json();
+                let songData=await songRes.json();
+
+                console.log(artistRes, songRes)
+                console.log(artistData, songData);
+
+            } catch (err) {
+                console.log(err);
+                let message=err.statusText ||"Ocurrio un error";
+                $error.innerHTML= `<p>Error: ${err.status}: ${message}</p>`;
+                $loader.style.display="none"
+            }
+        })
+    </script>
 </body>
 </html>

@@ -4,7 +4,7 @@ const $empezarBtn=d.querySelector("#empezarBtn")
 const $letrasUsadasElement=d.querySelector("#letrasUsadas")
 const $alumno=d.querySelector(".alumno")
 
-const words = ['Carne','Martillo', 'Lavadora','Sucio','Cangrejo','Lento','Alimentos','Delgado','Cubo','Comida','Caracol','Abajo','Alumno','Bonito','Cesta','Sol','Beber','Botella','Hamburguesa','Invierno'];
+const words = ['Diego','Martillo', 'Lavadora','Sucio','Cangrejo','Lento','Alimentos','Delgado','Cubo','Comida','Caracol','Abajo','Alumno','Bonito','Cesta','Sol','Beber','Botella','Hamburguesa','Invierno'];
 
 
 let canvas = document.getElementById('canvas'); 
